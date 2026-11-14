@@ -56,27 +56,27 @@ export const bookGroups = [
   {
     name: "Fiction",
     books: [
-      { slug: "the-quiet-suit", title: "The Quiet Suit", sub: "A Christmas Story", year: 2026, color: "#7E1F2B", line: "A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own.", url: amazon("B0HQFKVR3Z"), page: "the-quiet-suit.html", isNew: true },
-      { title: "Quiet Power", sub: "A novel", year: 2026, color: "#1F232D", line: "A candidate who refuses to perform certainty.", url: amazon("B0H7YTZV3H") },
-      { title: "Joey's Angel", sub: "A novel", year: 2026, color: "#8A5A6B", line: "A novel about legacy, fatherhood, and the quiet forces that shape a life.", url: amazon("B0GKXJSFK7") },
+      { slug: "the-quiet-suit", cover: "covers/the-quiet-suit.jpg", title: "The Quiet Suit", sub: "A Christmas Story", year: 2026, color: "#7E1F2B", line: "A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own.", url: amazon("B0HQFKVR3Z"), page: "the-quiet-suit.html", isNew: true },
+      { cover: "covers/quiet-power.jpg", title: "Quiet Power", sub: "A novel", year: 2026, color: "#1F232D", line: "A candidate who refuses to perform certainty.", url: amazon("B0H7YTZV3H") },
+      { cover: "covers/joeys-angel.jpg", title: "Joey's Angel", sub: "A novel", year: 2026, color: "#8A5A6B", line: "A novel about legacy, fatherhood, and the quiet forces that shape a life.", url: amazon("B0GKXJSFK7") },
     ],
   },
   {
     name: "Purpose and the interior life",
     books: [
       { title: "The Architecture of Why", sub: "Forthcoming", year: null, color: null, line: "The third book of the Why trilogy: protecting your why with architecture.", forthcoming: true },
-      { title: "The Fulfillment Curve", sub: "Reclaiming Peace in a World That Wants More", year: 2025, color: "#2C5D59", line: "Moving past achievement into alignment.", url: amazon("B0GJ5932C5") },
-      { title: "Building the Rich Life", sub: "Daily Meditations for a Year of Meaning", year: 2025, color: "#787A42", line: "365 daily meditations on stillness, discernment, and intentional choice.", url: amazon("B0G4QLVD9X") },
-      { title: "Fix Your Why", sub: "Creating Worthy Goals to Align Your Purpose", year: 2023, color: "#D1531F", line: "The first one. A systems approach to purpose, discipline, and aligned execution.", url: amazon("1961074079") },
+      { cover: "covers/the-fulfillment-curve.jpg", title: "The Fulfillment Curve", sub: "Reclaiming Peace in a World That Wants More", year: 2025, color: "#2C5D59", line: "Moving past achievement into alignment.", url: amazon("B0GJ5932C5") },
+      { cover: "covers/building-the-rich-life.jpg", title: "Building the Rich Life", sub: "Daily Meditations for a Year of Meaning", year: 2025, color: "#787A42", line: "365 daily meditations on stillness, discernment, and intentional choice.", url: amazon("B0G4QLVD9X") },
+      { cover: "covers/fix-your-why.jpg", title: "Fix Your Why", sub: "Creating Worthy Goals to Align Your Purpose", year: 2023, color: "#D1531F", line: "The first one. A systems approach to purpose, discipline, and aligned execution.", url: amazon("1961074079") },
     ],
   },
   {
     name: "The built world",
     books: [
-      { title: "Seeking Monopoly", sub: "How Greed Is Hijacking the American Dream", year: 2026, color: "#6B2A2A", line: "How unchecked consolidation outran its guardrails, and what rebuilding them would take.", url: amazon("B0GSVQTW89") },
-      { title: "The Housing Affordability Crisis in America", sub: "Second Edition", year: 2026, color: "#2D4556", line: "A civic and economic account of the breakdown, and the structural path out.", url: amazon("B0GKXXKQ79") },
-      { title: "When Price Outgrows Product", sub: "A Treatise on Housing Alignment in the Post-Affordability Era", year: 2025, color: "#A8742E", line: "How housing markets drift from product reality, and what correction actually requires.", url: amazon("B0GQLRFQ1R") },
-      { title: "A Treatise on Modern Architecture", sub: "Ten essays", year: 2025, color: "#30353A", line: "Ten essays from ancient Egypt to the Bauhaus to Palm Beach County production housing, ending at the High-Performance Home.", url: `${SUBSTACK}/p/a-treatise-on-modern-architecture-b7e`, linkLabel: "Read on Substack" },
+      { cover: "covers/seeking-monopoly.jpg", title: "Seeking Monopoly", sub: "How Greed Is Hijacking the American Dream", year: 2026, color: "#6B2A2A", line: "How unchecked consolidation outran its guardrails, and what rebuilding them would take.", url: amazon("B0GSVQTW89") },
+      { cover: "covers/housing-affordability-crisis.jpg", title: "The Housing Affordability Crisis in America", sub: "Second Edition", year: 2026, color: "#2D4556", line: "A civic and economic account of the breakdown, and the structural path out.", url: amazon("B0GKXXKQ79") },
+      { cover: "covers/when-price-outgrows-product.jpg", title: "When Price Outgrows Product", sub: "A Treatise on Housing Alignment in the Post-Affordability Era", year: 2025, color: "#A8742E", line: "How housing markets drift from product reality, and what correction actually requires.", url: amazon("B0GQLRFQ1R") },
+      { cover: "covers/a-treatise-on-modern-architecture.jpg", title: "A Treatise on Modern Architecture", sub: "Ten essays", year: 2025, color: "#30353A", line: "Ten essays from ancient Egypt to the Bauhaus to Palm Beach County production housing, ending at the High-Performance Home.", url: `${SUBSTACK}/p/a-treatise-on-modern-architecture-b7e`, linkLabel: "Read on Substack" },
     ],
   },
 ];

@@ -1,6 +1,6 @@
 // Static site generator for thebillryan.com. No dependencies.
 // Usage: node build.mjs  ->  writes dist/
-import { mkdirSync, writeFileSync, copyFileSync, readdirSync, rmSync } from "node:fs";
+import { mkdirSync, writeFileSync, cpSync, rmSync } from "node:fs";
 import * as D from "./data.mjs";
 
 const OUT = "dist";
@@ -80,6 +80,7 @@ const bookCover = (b, size = "") => {
   if (b.forthcoming) {
     return `<div class="cover ghost ${size}" aria-hidden="true"><span class="cover-title">${esc(b.title)}</span><span class="cover-author">Forthcoming</span></div>`;
   }
+  if (b.cover) return `<img class="cover-img ${size}" src="${b.cover}" alt="Cover of ${esc(b.title)}" width="480" height="720" loading="lazy">`;
   return `<div class="cover ${size}" style="--book:${b.color}" aria-hidden="true"><span class="cover-title">${esc(b.title)}${size === "large" && b.sub ? `<span class="cover-sub">${esc(b.sub)}</span>` : ""}</span><span class="cover-author">Bill Ryan</span></div>`;
 };
 
@@ -277,10 +278,14 @@ pages.push({
   file: "speaking.html",
   title: "Speaking | Bill Ryan",
   description: "Bill Ryan speaks to companies, executive teams and retreats. Keynotes, workshops and retreat cohorts.",
-  body: `<section class="wrap page-head">
-  ${scaleBar("Speaking")}
-  <h1>The builder who thinks at every scale.</h1>
-  <p class="lede">I speak to companies, executive teams and retreats about purpose, leadership, housing and civic design, and what it takes to build a life that holds under pressure. From the half-second before a decision to the architecture of a nation's housing.</p>
+  body: `<section class="wrap person-head">
+  <div class="page-head">
+    ${scaleBar("Speaking")}
+    <h1>The builder who thinks at every scale.</h1>
+    <p class="lede">I speak to companies, executive teams and retreats about purpose, leadership, housing and civic design, and what it takes to build a life that holds under pressure. From the half-second before a decision to the architecture of a nation's housing.</p>
+    <p class="hero-actions"><a class="btn" href="#inquiry">Book Bill to speak</a></p>
+  </div>
+  <img class="portrait square" src="photos/bill-headshot.jpg" alt="Bill Ryan" width="602" height="640">
 </section>
 <section class="wrap section">
   <article class="signature">
@@ -409,9 +414,13 @@ pages.push({
   file: "about.html",
   title: "About | Bill Ryan",
   description: "Bill Ryan grew up in a homebuilding family in Chicago, has built and sold more than 10,000 residences, and writes daily about the built world and the lived one.",
-  body: `<section class="wrap page-head">
-  ${scaleBar("About")}
-  <h1>Before I could drive, I understood foundations.</h1>
+  body: `<section class="wrap person-head">
+  <div class="page-head">
+    ${scaleBar("About")}
+    <h1>Before I could drive, I understood foundations.</h1>
+    <p class="lede">Builder, author and speaker. The principles that build a better home build a better life.</p>
+  </div>
+  <img class="portrait" src="photos/bill-portrait.jpg" alt="Bill Ryan" width="800" height="1199">
 </section>
 <section class="wrap prose">
   <p>I grew up in a homebuilding family in Chicago. Before I could drive, I understood foundations. How they are poured. What they bear. What happens when they fail.</p>
@@ -426,5 +435,5 @@ pages.push({
 });
 
 for (const p of pages) writeFileSync(`${OUT}/${p.file}`, page(p));
-for (const f of readdirSync("assets")) copyFileSync(`assets/${f}`, `${OUT}/${f}`);
+cpSync("assets", OUT, { recursive: true });
 console.log(`Built ${pages.length} pages into ${OUT}/`);
