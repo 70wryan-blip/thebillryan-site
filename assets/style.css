@@ -142,6 +142,12 @@ main { display: grid; gap: 72px; padding: 56px 0 88px; }
 @media (max-width: 760px) { .book-hero { grid-template-columns: 1fr; } .facts { grid-template-columns: 1fr; } }
 .club > * { max-width: 860px; }
 .warn { font-family: var(--label); font-size: 0.9rem; background: var(--blue-soft); color: var(--blue); padding: 10px 14px; border-radius: 4px; }
+.spoiler summary { cursor: pointer; list-style: none; font-family: var(--label); font-size: 0.95rem; background: var(--blue-soft); color: var(--blue); padding: 12px 14px; border-radius: 4px; }
+.spoiler summary::-webkit-details-marker { display: none; }
+.spoiler-k { font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; }
+.spoiler-open { display: inline-block; margin-left: 6px; text-decoration: underline; }
+.spoiler[open] .spoiler-open { display: none; }
+.spoiler[open] summary { margin-bottom: 20px; }
 .questions { margin: 0; padding-left: 1.6em; display: grid; gap: 16px; }
 .questions li { padding-left: 6px; }
 .questions li::marker { font-family: var(--label); font-weight: 600; color: var(--blue); }
@@ -220,6 +226,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--blue); outl
 .site-foot { border-top: 1px solid var(--ink); padding: 40px 0 28px; background: var(--paper-2); }
 .foot-grid { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .foot-mark { font-family: var(--display); font-size: 1.3rem; font-weight: 600; }
+.foot-mark a { color: inherit; text-decoration: none; }
 .foot-line { font-style: italic; color: var(--ink-2); }
 .site-foot nav { display: flex; flex-wrap: wrap; gap: 8px 20px; font-family: var(--label); font-size: 0.875rem; }
 .site-foot nav a { color: var(--ink-2); }

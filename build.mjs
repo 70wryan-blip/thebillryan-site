@@ -57,7 +57,7 @@ ${body}
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div>
-      <p class="foot-mark">Bill Ryan</p>
+      <p class="foot-mark"><a href="index.html">Bill Ryan</a></p>
       <p class="foot-line">What are we building. And what is it doing to us?</p>
     </div>
     <nav aria-label="Footer">
@@ -221,8 +221,10 @@ pages.push({
 <section class="wrap section club" id="club">
   ${scaleBar("For your book club")}
   <h2>Questions for your club</h2>
-  <p class="warn">These questions discuss the whole book, ending included. Finish it before your meeting.</p>
-  <ol class="questions">${D.tqsQuestions.map(([h, q]) => `<li><strong>${esc(h)}</strong> ${esc(q)}</li>`).join("")}</ol>
+  <details class="spoiler">
+    <summary><span class="spoiler-k">Spoiler alert</span> These questions discuss the whole book, ending included. Finish it before your meeting. <span class="spoiler-open">Show the questions</span></summary>
+    <ol class="questions">${D.tqsQuestions.map(([h, q]) => `<li><strong>${esc(h)}</strong> ${esc(q)}</li>`).join("")}</ol>
+  </details>
   <p><button class="btn ghost-btn" type="button" data-print>Print the one-page guide</button></p>
 </section>
 <div class="wrap">${form({
@@ -254,7 +256,7 @@ pages.push({
 </section>
 <section class="wrap section">
   <h2>The books</h2>
-  <ul class="club-list">${D.clubOrder.map((c) => `<li>${c.page ? `<a href="${c.page}">${esc(c.title)}</a>` : `<span>${esc(c.title)}</span>`}<span class="${c.page ? "tag" : "muted"}">${esc(c.status)}</span></li>`).join("")}</ul>
+  <ul class="club-list">${D.clubOrder.map((c) => `<li>${c.page ? `<a href="${c.page}">${esc(c.title)}</a>` : `<span>${esc(c.title)}</span>`}<span class="${c.page ? "tag" : "muted"}">${esc(c.status)}${c.page ? " · spoiler alert" : ""}</span></li>`).join("")}</ul>
   <p class="muted">In the app, coming in 2027, each book has its own room where readers post answers and Bill replies.</p>
 </section>
 <div class="wrap">${form({
@@ -434,6 +436,8 @@ pages.push({
 </section>`,
 });
 
-for (const p of pages) writeFileSync(`${OUT}/${p.file}`, page(p));
+// Links that leave the site open in a new tab (Bill, 11/15).
+const newTab = (html) => html.replace(/<a ((?:(?!target=)[^>])*?)href="(https?:\/\/(?!(?:www\.)?thebillryan\.com)[^"]+)"/g, '<a $1href="$2" target="_blank" rel="noopener"');
+for (const p of pages) writeFileSync(`${OUT}/${p.file}`, newTab(page(p)));
 cpSync("assets", OUT, { recursive: true });
 console.log(`Built ${pages.length} pages into ${OUT}/`);

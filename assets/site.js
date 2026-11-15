@@ -11,6 +11,7 @@
 
   document.querySelectorAll("[data-print]").forEach(function (b) {
     b.addEventListener("click", function () {
+      document.querySelectorAll("details.spoiler").forEach(function (d) { d.open = true; });
       try { window.print(); } catch (e) { /* printing blocked in previews */ }
     });
   });
