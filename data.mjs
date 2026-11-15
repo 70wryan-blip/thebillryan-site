@@ -82,7 +82,7 @@ export const bookGroups = [
 ];
 
 export const clubOrder = [
-  { title: "The Quiet Suit", status: "Questions ready", page: "the-quiet-suit.html#club" },
+  { title: "The Quiet Suit", status: "Questions ready", page: "book-club.html#the-quiet-suit" },
   { title: "Joey's Angel", status: "Questions ready", page: "book-club.html#joeys-angel" },
   { title: "Quiet Power", status: "Questions ready", page: "book-club.html#quiet-power" },
   { title: "The Fulfillment Curve", status: "Coming" },

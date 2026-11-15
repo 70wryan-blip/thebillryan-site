@@ -259,6 +259,17 @@ pages.push({
   <ul class="club-list">${D.clubOrder.map((c) => `<li>${c.page ? `<a href="${c.page}">${esc(c.title)}</a>` : `<span>${esc(c.title)}</span>`}<span class="${c.page ? "tag" : "muted"}">${esc(c.status)}${c.page ? " · spoiler alert" : ""}</span></li>`).join("")}</ul>
   <p class="muted">In the app, coming in 2027, each book has its own room where readers post answers and Bill replies.</p>
 </section>
+<section class="wrap section club" id="the-quiet-suit">
+  ${scaleBar("Book Club guide")}
+  ${bookCard({ ...D.bookGroups.flatMap((g) => g.books).find((b) => b.title === "The Quiet Suit"), page: "" })}
+  <h2>The Quiet Suit: questions for your club</h2>
+  <p>Ten questions in the order a meeting runs: eight about the story, two about your own life.</p>
+  <details class="spoiler">
+    <summary><span class="spoiler-k">Spoiler alert</span> These questions discuss the whole book, ending included. Finish it before your meeting. <span class="btn spoiler-open">View anyway</span></summary>
+    <ol class="questions">${D.tqsQuestions.map(([h, q]) => `<li><strong>${esc(h)}</strong> ${esc(q)}</li>`).join("")}</ol>
+  </details>
+  <p><button class="btn ghost-btn" type="button" data-print>Print the guide</button></p>
+</section>
 <section class="wrap section club" id="quiet-power">
   ${scaleBar("Book Club guide")}
   ${bookCard({ ...D.bookGroups.flatMap((g) => g.books).find((b) => b.title === "Quiet Power"), page: "" })}
