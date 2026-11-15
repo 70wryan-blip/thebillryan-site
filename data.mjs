@@ -58,7 +58,7 @@ export const bookGroups = [
     books: [
       { slug: "the-quiet-suit", cover: "covers/the-quiet-suit.jpg", title: "The Quiet Suit", sub: "A Christmas Story", year: 2026, color: "#7E1F2B", line: "A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own.", url: amazon("B0HQFKVR3Z"), page: "the-quiet-suit.html", isNew: true },
       { cover: "covers/quiet-power.jpg", title: "Quiet Power", sub: "A novel", year: 2026, color: "#1F232D", line: "A candidate who refuses to perform certainty.", url: amazon("B0H7YTZV3H") },
-      { cover: "covers/joeys-angel.jpg", title: "Joey's Angel", sub: "A novel", year: 2026, color: "#8A5A6B", line: "A novel about legacy, fatherhood, and the quiet forces that shape a life.", url: amazon("B0GKXJSFK7") },
+      { cover: "covers/joeys-angel.jpg", title: "Joey's Angel", sub: "A novel", year: 2026, color: "#8A5A6B", line: "A novel about legacy, fatherhood, and the quiet forces that shape a life.", url: amazon("B0GKXJSFK7"), page: "book-club.html#joeys-angel" },
     ],
   },
   {
@@ -83,6 +83,7 @@ export const bookGroups = [
 
 export const clubOrder = [
   { title: "The Quiet Suit", status: "Questions ready", page: "the-quiet-suit.html#club" },
+  { title: "Joey's Angel", status: "Questions ready", page: "book-club.html#joeys-angel" },
   { title: "Quiet Power", status: "Coming in January" },
   { title: "The Fulfillment Curve", status: "Coming" },
   { title: "Fix Your Why", status: "Coming" },
@@ -125,3 +126,39 @@ export const pamphlets = [
   { no: "01", title: "Stillness & Strength", sub: "Building a Life That Holds Under Pressure", status: "Printing now", color: "#4A5A3A" },
   { no: "02", title: "The Program", sub: "From the Republic series", status: "In preparation", color: "#2D4556" },
 ];
+
+// Joey's Angel: Book Club Discussion Guide (Bill Ryan, 2026; cleaned 6/25/2026). Used at two club visits.
+export const jaGuide = {
+  intro: "These questions are designed to build, from accessible entry points to deeper territory. You don't need to cover all of them. Follow the room. The best conversations often begin with a simple question and go somewhere no one planned.",
+  parts: [
+    { title: "Part One: First Impressions", lede: "Use these questions to open the room and get everyone talking. No wrong answers here.", qs: [
+      ["The book opens with Logan and Joey on a basketball court. What did that scene establish for you about who these two people were to each other?"],
+      ["The chapter called \u2018How Logan Loved\u2019 describes a father's quiet, non-performative love. Did you recognize anyone in that portrait, someone who loved you that way, or someone you have loved that way?"],
+      ["The Last Normal Morning is one of the most carefully constructed chapters in the book. What details stuck with you? What did you notice on re-reading that you didn't notice the first time?"],
+      ["When you first crossed into Logan's realm after his death, what was your response to the premise? Did the supernatural framework draw you in or hold you at a distance?"],
+    ]},
+    { title: "Part Two: The Characters", lede: "These questions focus on who the characters are and what they carry.", qs: [
+      ["Logan's arc in the unseen realm is not about Joey; it's about Logan learning something. What does he have to learn? And why is it so hard for him?"],
+      ["Lena arrives without being asked, carrying food and company. She doesn't try to fix anything. She simply stays. What did her presence mean to Joey, and what did it mean to you as a reader?"],
+      ["Coach Ramirez tells Joey: \u2018You don't earn adulthood by doing it alone. You step into it by admitting when you can't.\u2019 How does his own loss, his father's death, make him credible in that moment?"],
+      ["The Presence in Logan's realm responds to his grief with truth rather than comfort. It doesn't tell Logan what he wants to hear. What do you make of that choice? Would comfort have served Logan better?", "These are not lessons Logan learns so he can do better next time; there is no next time. The Presence is trying to help him see. Pain has no place in Logan's existence; only growth serves."],
+      ["Joey's mother is largely seen through Joey's eyes, as someone who \u2018held it together\u2019 after Logan's death. When she becomes the one who needs care, how does that shift the story's weight?"],
+    ]},
+    { title: "Part Three: The Big Ideas", lede: "These questions go deeper into theme. Use them when the room is ready.", qs: [
+      ["The book argues that \u2018influence travels forward,\u2019 that the people who shaped us continue shaping the world through us. Do you believe that? And what does it ask of us, if true?"],
+      ["Logan spends most of the novel believing love is measured by how much you can carry for someone. The Presence calls this an illusion. What is the alternative the book offers, and is it convincing?"],
+      ["The breath count appears at key moments throughout the novel, first as something Logan teaches, then as something Joey reaches for alone in a hospital hallway, without thinking. What does that moment mean?"],
+      ["The book says that a childhood ends \u2018when a person chooses to stay in the room of someone else's suffering without needing to be told.\u2019 Does that resonate with your own experience of becoming an adult?", "The meaning of adulthood is different for each of us; some are forced to grow up sooner than they are ready."],
+      ["By the end, Logan is no longer watching Joey; he is \u2018within what Joey has become.\u2019 What does the book mean by that? Is that a satisfying ending for Logan's arc, or does something in you resist it?"],
+    ]},
+    { title: "Part Four: The Personal Territory", lede: "These questions invite the room toward its own stories. Use them when the conversation wants to go somewhere real.", qs: [
+      ["Is there someone in your life, living or gone, whose influence you can still feel? What did they leave behind that you carry?"],
+      ["Logan had to learn that love is not control, not rescue; it is participation. Is there a relationship in your life where you have had to learn the same thing?"],
+      ["The Note to Parents at the end of the book says: \u2018Perfection does not exist. Presence and intention are the memories that stick on our children.\u2019 What do you hope your own presence and intention have left behind?"],
+    ]},
+    { title: "Closing Question", lede: "One question to end every conversation with.", qs: [
+      ["The book ends with the line: \u2018And nothing that mattered was ever lost.\u2019 Do you believe that? And what would it mean for your own life if it were true?"],
+    ]},
+  ],
+  authorNote: ["This story began thirty years ago and waited patiently while I caught up to it.", "Thank you for spending time with Joey and Logan.", "I hope it gave you something to sit with."],
+};

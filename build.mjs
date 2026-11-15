@@ -259,13 +259,27 @@ pages.push({
   <ul class="club-list">${D.clubOrder.map((c) => `<li>${c.page ? `<a href="${c.page}">${esc(c.title)}</a>` : `<span>${esc(c.title)}</span>`}<span class="${c.page ? "tag" : "muted"}">${esc(c.status)}${c.page ? " · spoiler alert" : ""}</span></li>`).join("")}</ul>
   <p class="muted">In the app, coming in 2027, each book has its own room where readers post answers and Bill replies.</p>
 </section>
+<section class="wrap section club" id="joeys-angel">
+  ${scaleBar("Book Club guide")}
+  ${bookCard({ ...D.bookGroups.flatMap((g) => g.books).find((b) => b.title === "Joey's Angel"), page: "" })}
+  <h2>Joey's Angel: questions for your club</h2>
+  <p>${esc(D.jaGuide.intro)}</p>
+  <details class="spoiler">
+    <summary><span class="spoiler-k">Spoiler alert</span> These questions discuss the whole book, ending included. Finish it before your meeting. <span class="btn spoiler-open">View anyway</span></summary>
+    ${(() => { let n = 0; return D.jaGuide.parts.map((p) => `<h3 class="guide-part">${esc(p.title)}</h3>
+    <p class="muted"><em>${esc(p.lede)}</em></p>
+    <ol class="questions" start="${n + 1}">${p.qs.map(([q, host]) => { n++; return `<li>${esc(q)}${host ? `<p class="host-note"><em>For the host: ${esc(host)}</em></p>` : ""}</li>`; }).join("")}</ol>`).join(""); })()}
+    <div class="author-note">${D.jaGuide.authorNote.map((l) => `<p><em>${esc(l)}</em></p>`).join("")}<p class="muted">Bill Ryan</p></div>
+  </details>
+  <p><button class="btn ghost-btn" type="button" data-print>Print the guide</button></p>
+</section>
 <div class="wrap">${form({
     id: "club-visit", kind: "Book club visit",
     heading: "Bring Bill to your club",
     fields: [
       { name: "name", label: "Your name", required: true },
       { name: "email", label: "Email", type: "email", required: true },
-      { name: "book", label: "Which book", type: "select", options: ["The Quiet Suit", "Quiet Power", "The Fulfillment Curve", "Fix Your Why", "Building the Rich Life", "Another book"] },
+      { name: "book", label: "Which book", type: "select", options: ["The Quiet Suit", "Joey's Angel", "Quiet Power", "The Fulfillment Curve", "Fix Your Why", "Building the Rich Life", "Another book"] },
       { name: "mode", label: "In person or by video", type: "select", options: ["By video", "In person"] },
       { name: "club", label: "Club name and where you meet", required: true, wide: true },
       { name: "dates", label: "A date or two that work", wide: true },

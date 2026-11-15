@@ -148,6 +148,9 @@ main { display: grid; gap: 72px; padding: 56px 0 88px; }
 .spoiler-open { display: block; width: max-content; margin-top: 12px; }
 .spoiler[open] .spoiler-open { display: none; }
 .spoiler[open] summary { margin-bottom: 20px; }
+.guide-part { margin: 28px 0 4px; }
+.host-note { color: var(--muted, #666); font-size: 0.92rem; margin: 6px 0 0; }
+.author-note { margin-top: 28px; border-top: 1px solid rgba(0,0,0,.12); padding-top: 16px; }
 .questions { margin: 0; padding-left: 1.6em; display: grid; gap: 16px; }
 .questions li { padding-left: 6px; }
 .questions li::marker { font-family: var(--label); font-weight: 600; color: var(--blue); }
