@@ -56,7 +56,7 @@ export const bookGroups = [
   {
     name: "Fiction",
     books: [
-      { slug: "the-quiet-suit", cover: "covers/the-quiet-suit.jpg", title: "The Quiet Suit", sub: "A Christmas Story", year: 2026, color: "#7E1F2B", line: "A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own.", url: amazon("B0HQFKVR3Z"), page: "the-quiet-suit.html", isNew: true },
+      { slug: "the-quiet-suit", cover: "covers/the-quiet-suit.jpg", title: "The Quiet Suit", sub: "A Santa Story", year: 2026, color: "#7E1F2B", line: "A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own.", url: amazon("B0HQFKVR3Z"), page: "the-quiet-suit.html", isNew: true },
       { cover: "covers/quiet-power.jpg", title: "Quiet Power", sub: "A novel", year: 2026, color: "#1F232D", line: "A candidate who refuses to perform certainty.", url: amazon("B0H7YTZV3H") },
       { cover: "covers/joeys-angel.jpg", title: "Joey's Angel", sub: "A novel", year: 2026, color: "#8A5A6B", line: "A novel about legacy, fatherhood, and the quiet forces that shape a life.", url: amazon("B0GKXJSFK7"), page: "book-club.html#joeys-angel" },
     ],

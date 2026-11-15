@@ -199,12 +199,12 @@ ${D.bookGroups.map((g) => `<section class="wrap section">
 pages.push({
   file: "the-quiet-suit.html",
   title: "The Quiet Suit | Bill Ryan",
-  description: "The Quiet Suit: A Christmas Story. A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own. Questions for your book club.",
+  description: "The Quiet Suit: A Santa Story. A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own. Questions for your book club.",
   body: `<section class="wrap book-hero">
   ${bookCover(tqs, "large")}
   <div>
     ${scaleBar("A Christmas novel &middot; 2026")}
-    <h1>The Quiet Suit <span class="h-sub">A Christmas Story</span></h1>
+    <h1>The Quiet Suit <span class="h-sub">A Santa Story</span></h1>
     <p class="lede">A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own.</p>
     <p>The story follows a man who finds an unlikely suit and acts on an impulse he does not fully understand. What begins with small acts of kindness soon becomes something larger. Strangers begin giving to strangers. A stone wall becomes a place of quiet generosity. And the man at the center of it all discovers that sometimes the most meaningful thing we can do is step aside.</p>
     <p>The Quiet Suit is a tender, contemplative holiday story about generosity, belonging, and the wonder we risk losing as we grow older.</p>
