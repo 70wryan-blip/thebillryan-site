@@ -57,7 +57,7 @@ export const bookGroups = [
     name: "Fiction",
     books: [
       { slug: "the-quiet-suit", cover: "covers/the-quiet-suit.jpg", title: "The Quiet Suit", sub: "A Santa Story", year: 2026, color: "#7E1F2B", line: "A widower finds an old Santa suit in a thrift store and quietly changes how a town cares for its own.", url: amazon("B0HQFKVR3Z"), page: "the-quiet-suit.html", isNew: true },
-      { cover: "covers/quiet-power.jpg", title: "Quiet Power", sub: "A novel", year: 2026, color: "#1F232D", line: "A candidate who refuses to perform certainty.", url: amazon("B0H7YTZV3H") },
+      { cover: "covers/quiet-power.jpg", title: "Quiet Power", sub: "A novel", year: 2026, color: "#1F232D", line: "A candidate who refuses to perform certainty.", url: amazon("B0H7YTZV3H"), page: "book-club.html#quiet-power" },
       { cover: "covers/joeys-angel.jpg", title: "Joey's Angel", sub: "A novel", year: 2026, color: "#8A5A6B", line: "A novel about legacy, fatherhood, and the quiet forces that shape a life.", url: amazon("B0GKXJSFK7"), page: "book-club.html#joeys-angel" },
     ],
   },
@@ -84,7 +84,7 @@ export const bookGroups = [
 export const clubOrder = [
   { title: "The Quiet Suit", status: "Questions ready", page: "the-quiet-suit.html#club" },
   { title: "Joey's Angel", status: "Questions ready", page: "book-club.html#joeys-angel" },
-  { title: "Quiet Power", status: "Coming in January" },
+  { title: "Quiet Power", status: "Questions ready", page: "book-club.html#quiet-power" },
   { title: "The Fulfillment Curve", status: "Coming" },
   { title: "Fix Your Why", status: "Coming" },
   { title: "Building the Rich Life", status: "A year-long club, one theme a month" },
@@ -162,3 +162,17 @@ export const jaGuide = {
   ],
   authorNote: ["This story began thirty years ago and waited patiently while I caught up to it.", "Thank you for spending time with Joey and Logan.", "I hope it gave you something to sit with."],
 };
+
+// Quiet Power: ten questions, built 11/15/2026 from the published text (Atticus, Quiet Power v 7.1). Quotes checked against it.
+export const qpQuestions = [
+  ["The line they would quote.", "The book opens near its end: David at a podium he will not touch, telling the press, \u201cI won\u2019t perform certainty for you.\u201d The narrator warns that this is the line they will quote later, \u201cstripped of context.\u201d Why begin with a sentence the world is about to misuse? What did it mean to you by the last chapter?"],
+  ["You stayed on pitch.", "After the school recital his mother claps twice and says, \u201cYou stayed on pitch. That matters.\u201d David goes to his room wondering whether he did enough to \u201cdeserve neutrality.\u201d How much of the candidate is already in that boy? Is his restraint his strength, his wound, or both?"],
+  ["Two lines in the notebook.", "At nineteen he writes, \u201cIf I don\u2019t hold it together, do I disappear?\u201d Years later, the night he decides to run, he writes, \u201cI am not choosing power. I am choosing to stand where my silence can no longer be mistaken.\u201d What changed between those two sentences?"],
+  ["Delay some of your truths.", "Julian Sinclair\u2019s offer is gentle: \u201cYou won\u2019t have to do anything dishonest. You\u2019ll just have to delay some of your truths.\u201d Is delay a kind of dishonesty? Julian believes he was trying to protect David. Do you believe him?"],
+  ["Westward Street.", "David is not scheduled to speak at the forum. He goes because Marlene asks, and tells her, \u201cIt\u2019s going to get loud. Ugly is a choice.\u201d Clara, watching from the wall, writes three words: \u201cNot running. Dangerous.\u201d Why does the story turn in a community hall instead of on a stage? And why dangerous?"],
+  ["What Clara writes down.", "Alone in her hotel room, Clara fears \u201cnot that he would bend, but that he would harden,\u201d and ends her entry, \u201cThe system is not his mother.\u201d What does she see in David that he cannot see in himself? Is she right?"],
+  ["Langston or nothing.", "A sign in the crowd troubles David more than anything Julian has done. Adoration, he decides, is \u201cprojection,\u201d \u201ca form of blindness with warmth,\u201d and he writes, \u201cIf they elevate me beyond proportion, I must lower myself deliberately.\u201d Why is being worshipped more dangerous to him than being attacked?"],
+  ["I can\u2019t promise that.", "In a high school gym, Kevin the plumber asks what promise David can make that life will get better. David answers, \u201cI can\u2019t promise that,\u201d and Kevin replies, \u201cThat\u2019s about what I figured.\u201d Why does the room applaud? Would you vote for a candidate who said it? Julian\u2019s verdict on election night: \u201cIt appears they wanted the harder kind.\u201d"],
+  ["What do citizens owe the future?", "Watching the campaign from her kitchen in Dayton, Ms. Kline changes Wednesday\u2019s lesson to one question: \u201cWhat do citizens owe the future?\u201d On election day a man in line says he votes \u201cbecause it\u2019s still ours.\u201d How would you answer her question for yourself?"],
+  ["Your ceiling.", "All his life David is praised as mature and careful, until one night the word careful \u201cfelt like a ceiling.\u201d Has a compliment ever become a ceiling for you? What would it take to step past it?"],
+];
