@@ -145,7 +145,7 @@ main { display: grid; gap: 72px; padding: 56px 0 88px; }
 .spoiler summary { cursor: pointer; list-style: none; font-family: var(--label); font-size: 0.95rem; background: var(--blue-soft); color: var(--blue); padding: 12px 14px; border-radius: 4px; }
 .spoiler summary::-webkit-details-marker { display: none; }
 .spoiler-k { font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; }
-.spoiler-open { display: inline-block; margin-left: 6px; text-decoration: underline; }
+.spoiler-open { display: block; width: max-content; margin-top: 12px; }
 .spoiler[open] .spoiler-open { display: none; }
 .spoiler[open] summary { margin-bottom: 20px; }
 .questions { margin: 0; padding-left: 1.6em; display: grid; gap: 16px; }

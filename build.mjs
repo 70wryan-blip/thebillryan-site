@@ -222,7 +222,7 @@ pages.push({
   ${scaleBar("For your book club")}
   <h2>Questions for your club</h2>
   <details class="spoiler">
-    <summary><span class="spoiler-k">Spoiler alert</span> These questions discuss the whole book, ending included. Finish it before your meeting. <span class="spoiler-open">Show the questions</span></summary>
+    <summary><span class="spoiler-k">Spoiler alert</span> These questions discuss the whole book, ending included. Finish it before your meeting. <span class="btn spoiler-open">View anyway</span></summary>
     <ol class="questions">${D.tqsQuestions.map(([h, q]) => `<li><strong>${esc(h)}</strong> ${esc(q)}</li>`).join("")}</ol>
   </details>
   <p><button class="btn ghost-btn" type="button" data-print>Print the one-page guide</button></p>
