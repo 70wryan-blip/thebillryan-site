@@ -47,6 +47,7 @@ export const pieces = [
 ];
 
 export const digests = [
+  { date: "2026-11-15", title: "The Bill Ryan Digest (11-15-2026)", dek: "The Quiet Suit, The Eleventh Hour and Bitchin' & Moanin', with Quiet Power and the new site. Make one small change before next Sunday.", url: `${SUBSTACK}/p/the-bill-ryan-digest-11-15-2026` },
   { date: "2026-11-08", title: "The Bill Ryan Digest (11-08-2026)", dek: "Reverence Is Mindfulness and One Small, Brave Thing. Most of what we get wrong, we get wrong by not looking twice.", url: `${SUBSTACK}/p/the-bill-ryan-digest-11-08-2026` },
   { date: "2026-11-01", title: "The Bill Ryan Digest (11-01-2026)", dek: "Spin Dumpster and Too Much Courage. What we do not build, someone ends up carrying.", url: `${SUBSTACK}/p/the-bill-ryan-digest-11-01-2026` },
 ];
@@ -74,7 +75,7 @@ export const bookGroups = [
     name: "The built world",
     books: [
       { cover: "covers/seeking-monopoly.jpg", title: "Seeking Monopoly", sub: "How Greed Is Hijacking the American Dream", year: 2026, color: "#6B2A2A", line: "How unchecked consolidation outran its guardrails, and what rebuilding them would take.", url: amazon("B0GSVQTW89") },
-      { cover: "covers/housing-affordability-crisis.jpg", title: "The Housing Affordability Crisis in America", sub: "Second Edition", year: 2026, color: "#2D4556", line: "A civic and economic account of the breakdown, and the structural path out.", url: amazon("B0GKXXKQ79") },
+      { cover: "covers/housing-affordability-crisis.jpg", title: "The Housing Affordability Crisis in America", sub: "From Crisis to Opportunity: Rethinking Housing for a Thriving Society (Second Edition)", year: 2026, color: "#2D4556", line: "A civic and economic account of the breakdown, and the structural path out.", url: amazon("B0GKXXKQ79") },
       { cover: "covers/when-price-outgrows-product.jpg", title: "When Price Outgrows Product", sub: "A Treatise on Housing Alignment in the Post-Affordability Era", year: 2025, color: "#A8742E", line: "How housing markets drift from product reality, and what correction actually requires.", url: amazon("B0GQLRFQ1R") },
       { cover: "covers/a-treatise-on-modern-architecture.jpg", title: "A Treatise on Modern Architecture", sub: "Ten essays", year: 2025, color: "#30353A", line: "Ten essays from ancient Egypt to the Bauhaus to Palm Beach County production housing, ending at the High-Performance Home.", url: `${SUBSTACK}/p/a-treatise-on-modern-architecture-b7e`, linkLabel: "Read on Substack" },
     ],
