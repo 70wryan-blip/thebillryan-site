@@ -37,6 +37,8 @@ export const lenses = [
 
 // Newest first. From the Chronicle; Digests are listed on the Letter page.
 export const pieces = [
+  { date: "2026-11-20", title: "When No One Is Around", dek: "The hardest audience for grace is the one no one else hears.", lens: "The Interior", url: `${SUBSTACK}/p/when-no-one-is-around` },
+  { date: "2026-11-18", title: "The Strength to Extend Grace", dek: "Grace is not the soft response. It is the one that asks the most of us.", lens: "The Interior", url: `${SUBSTACK}/p/the-strength-to-extend-grace` },
   { date: "2026-11-12", title: "Bitchin' & Moanin'", dek: "A wave is a verdict, not a vision.", lens: "The Republic", url: `${SUBSTACK}/p/bitchin-and-moanin` },
   { date: "2026-11-11", title: "The Eleventh Hour", dek: "What Veterans Day was for, and what it asks of those of us who never served.", lens: "The Republic", url: `${SUBSTACK}/p/the-eleventh-hour` },
   { date: "2026-11-10", title: "The Quiet Suit: A Christmas Story", dek: "A new Christmas novel, released on Stacy's birthday.", lens: "The Interior", url: `${SUBSTACK}/p/the-quiet-suit-a-christmas-story` },
@@ -47,6 +49,7 @@ export const pieces = [
 ];
 
 export const digests = [
+  { date: "2026-11-22", title: "The Bill Ryan Digest (11-22-2026)", dek: "The Strength to Extend Grace and When No One Is Around: grace given to others, and grace given to ourselves, with both meanings of the word at the Thanksgiving table.", url: `${SUBSTACK}/p/the-bill-ryan-digest-11-22-2026` },
   { date: "2026-11-15", title: "The Bill Ryan Digest (11-15-2026)", dek: "The Quiet Suit, The Eleventh Hour and Bitchin' & Moanin', with Quiet Power and the new site. Make one small change before next Sunday.", url: `${SUBSTACK}/p/the-bill-ryan-digest-11-15-2026` },
   { date: "2026-11-08", title: "The Bill Ryan Digest (11-08-2026)", dek: "Reverence Is Mindfulness and One Small, Brave Thing. Most of what we get wrong, we get wrong by not looking twice.", url: `${SUBSTACK}/p/the-bill-ryan-digest-11-08-2026` },
   { date: "2026-11-01", title: "The Bill Ryan Digest (11-01-2026)", dek: "Spin Dumpster and Too Much Courage. What we do not build, someone ends up carrying.", url: `${SUBSTACK}/p/the-bill-ryan-digest-11-01-2026` },
