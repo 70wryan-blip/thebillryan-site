@@ -37,6 +37,7 @@ export const lenses = [
 
 // Newest first. From the Chronicle; Digests are listed on the Letter page.
 export const pieces = [
+  { date: "2026-11-25", title: "The Long Table", dek: "The smallest unit of the Republic has too many chairs and not enough elbow room.", lens: "The Republic", url: `${SUBSTACK}/p/the-long-table` },
   { date: "2026-11-24", title: "A Home for the Work", dek: "thebillryan.com is rebuilt. Here is what you will find there.", lens: "", url: `${SUBSTACK}/p/a-home-for-the-work` },
   { date: "2026-11-20", title: "When No One Is Around", dek: "The hardest audience for grace is the one no one else hears.", lens: "The Interior", url: `${SUBSTACK}/p/when-no-one-is-around` },
   { date: "2026-11-18", title: "The Strength to Extend Grace", dek: "Grace is not the soft response. It is the one that asks the most of us.", lens: "The Interior", url: `${SUBSTACK}/p/the-strength-to-extend-grace` },
